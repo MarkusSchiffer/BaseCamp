@@ -7,10 +7,10 @@ export default (ctx, inject) => {
       console.log(cid)
       const communityRef = fireDb.ref('/communities/' + cid + '/groups/')
       await communityRef.once('value').then((res) => {
-        console.log(res.toJSON);
-        for let k, v in (res.toJSON) {
-          getGroupInfo(k or v);
-        }
+        console.log(res.toJSON)
+        // for let k, v in (res.toJSON) {
+        //   getGroupInfo(k or v);
+        // }
         return res.key
       })
     } catch (e) {
