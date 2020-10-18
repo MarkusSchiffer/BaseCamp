@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>{{ HobbyName }}</h1>
+    <p> hobby page </p>
   </div>
 </template>
 <script>
