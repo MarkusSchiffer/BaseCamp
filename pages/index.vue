@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col">
         <p id="intro">get started learning a new Hobby with BaseCamp!</p>
-        <button id="start" onClick="document.location='.'">Start Now</button>
+        <button onClick="document.location='.'">Start Now</button>
       </div>
       <div class="col">
         <img id="logo" src="~/static/images/logo.png" />
@@ -41,8 +41,15 @@ export default {
     margin-top: 20px;
   }
 
-  #start {
-    align: center;
+  button {
+    padding: 14px 30px;
+    color: white;
     font-size: 20px;
+    background-color: #007189;
+    border: 4px solid #007189;
+  }
+
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 </style>
