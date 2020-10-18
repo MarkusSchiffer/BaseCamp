@@ -43,7 +43,7 @@ export default {
     object-fit: cover;
 }
 
-.nuxt-link-active {
+#hob a{
   text-decoration: none;
   color: inherit;
 }
