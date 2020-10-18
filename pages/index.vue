@@ -2,6 +2,8 @@
   <div class="container">
     <div>
       <img id="logo" src="~/static/images/logo.png" />
+      <p>get started learning a new Hobby with BaseCamp!</p>
+      <button id="start" onClick="document.location='.'">Start Now</button>
       <Community :cardTitle="'Card Title'" :cardImage="'https://picsum.photos/600/300/?image=25'"/>
     </div>
   </div>
@@ -23,7 +25,9 @@ export default {
     width: 200px;
     height: 200px;
     margin: 10px;
-    bottom: 0;
-    right: 0;
+  }
+
+  body {
+    color: red;
   }
 </style>
