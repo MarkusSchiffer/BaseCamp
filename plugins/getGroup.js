@@ -4,11 +4,11 @@ export default (ctx, inject) => {
     try {
       console.log('hello')
       const groupRef = fireDb.ref(`/groups/${gid}`)
-      return await (await communityRef.once('value')).toJSON()
+      return await (await groupRef.once('value')).toJSON()
     } catch (e) {
       console.error(e)
     }
     console.log('done')
   }
-  inject('getCommunityInfo', groupRef)
+  inject('getGroupInfo', groupRef)
 }
