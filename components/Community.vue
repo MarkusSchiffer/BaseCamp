@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="com">
     <nuxt-link to="/">
       <b-card
         no-body
@@ -24,7 +24,7 @@ export default {
   name: 'Community',
   props: {
     cardTitle: { type: String, required: true },
-    cardImage: { type: String, required: true },
+    cardImage: { type: String, required: true, default: '~/static/images/logo.png' },
     cardDesc: { type: String, required: false, default: 'Check out this community!' }
   }
 }
@@ -40,6 +40,10 @@ export default {
 .nuxt-link-active {
   text-decoration: none;
   color: inherit;
+}
+
+#com:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 24px 0 rgba(0,0,0,0.19);
 }
 
 </style>
