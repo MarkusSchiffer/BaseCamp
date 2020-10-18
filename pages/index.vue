@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col">
-        <p id="intro">get started learning a new Hobby with BaseCamp!</p>
+      <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
+        <p id="intro">Get started learning a new Hobby with BaseCamp!</p>
         <button onClick="document.location='.'">Start Now</button>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
         <img id="logo" src="~/static/images/logo.png" />
       </div>
     </div>
@@ -29,11 +29,9 @@ export default {
     width: 200px;
     height: 200px;
     margin: 10px;
-    margin-left: 20px;
   }
 
   .row {
-    margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 50px;
   }
@@ -54,7 +52,6 @@ export default {
     font-size: 20px;
     background-color: #006958;
     border: 4px solid #006958;
-    margin-left: 180px;
   }
 
   button:hover {
