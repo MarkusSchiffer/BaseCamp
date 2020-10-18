@@ -39,6 +39,9 @@
               Sign Out
             </b-dropdown-item>
           </b-nav-item-dropdown>
+
+          <v-btn outline fab @click="googleSignIn" color="#4285F4"><v-icon>Sign in</v-icon></v-btn>
+
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -46,8 +49,21 @@
 </template>
 
 <script>
+import firebase from 'firebase'
 export default {
-  name: 'Header'
+  name: 'Header',
+  methods: {
+    googleSignIn () {
+      this.provider = new firebase.auth.GoogleAuthProvider()
+      firebase.auth().signInWithPopup(this.provider).then((result) => {
+      // store the user ore wathever
+        this.$router.push('/home')
+      }).catch((e) => {
+        this.$snotify.error(e.message)
+        console.log(e)
+      })
+    }
+  }
 }
 </script>
 
