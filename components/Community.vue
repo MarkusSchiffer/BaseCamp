@@ -24,7 +24,7 @@ export default {
   name: 'Community',
   props: {
     cardTitle: { type: String, required: true },
-    cardImage: { type: String, required: true },
+    cardImage: { type: String, required: true, default: '~/static/images/logo.png' },
     cardDesc: { type: String, required: false, default: 'Check out this community!' }
   }
 }
