@@ -3,8 +3,8 @@ export default (ctx, inject) => {
   const getAllUsers = async () => {
     try {
       console.log('hello')
-      const hailMairyRef = fireDb.ref('/users')
-      await hailMairyRef.once('value').then((data) => {
+      const userRef = fireDb.ref('/users')
+      await userRef.once('value').then((data) => {
         console.log(data.toJSON())
       })
     } catch (e) {

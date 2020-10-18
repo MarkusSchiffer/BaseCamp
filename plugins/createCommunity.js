@@ -9,8 +9,10 @@ export default (ctx, inject) => {
         name: '10',
         numUsers: '4',
         numGroups: 1,
-        groupID: [{
-          someGroup: 'hiking'
+        groupIDs: [{
+          groupOne: 'hiking',
+          groupTwo: 'hiking2',
+          groupThree: 'hiking3'
         }],
         cumExp: 7,
         popRank: 1,

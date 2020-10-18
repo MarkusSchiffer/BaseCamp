@@ -20,7 +20,9 @@ export default {
   plugins: [
     '~/plugins/createCommunity.js',
     '~/plugins/getAllUsers.js',
-    '~/plugins/firebase.js'
+    '~/plugins/firebase.js',
+    '~/plugins/getGroupsInCommunity.js',
+    '~/plugins/getCommunityInfo.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

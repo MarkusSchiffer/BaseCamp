@@ -5,7 +5,7 @@
         Write to Firestore.
       </h2>
       <div>
-        <button @click="createCommunity" :disabled="writeSuccessful">
+        <button @click="getCommunityInfo" :disabled="writeSuccessful">
           <span v-if="!writeSuccessful">Write now</span>
           <span v-else>Successful!
           </span>
@@ -23,8 +23,8 @@ export default {
     }
   },
   methods: {
-    async createCommunity () {
-      await this.$createCommunity('testid').then((res) => {
+    async getCommunityInfo () {
+      await this.$getCommunityInfo('-MJv5n-b4hVQgcvOVaAn').then((res) => {
         console.log('inside testing page, result = ' + res)
       })
     }
