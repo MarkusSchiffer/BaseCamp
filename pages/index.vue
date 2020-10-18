@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col col-12 col-md-6 d-flex justify-content-center flex-column">
         <p id="intro">Get started learning a new Hobby with BaseCamp!</p>
-        <button id="start-now" onClick="document.location='.'">Start Now</button>
+        <button id="start-now" onClick="document.location='groups/create'">Create a Group</button>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center">
         <img id="logo" src="~/static/images/logo.png" />
@@ -44,7 +44,7 @@ export default {
   #start-now {
     padding: 12px 26px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #006958;
     border: 4px solid #006958;
     margin-left: 100px;
