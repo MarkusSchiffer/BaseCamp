@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        pastyme
+        Pastee Mee
       </h1>
       <div class="links">
         <a
