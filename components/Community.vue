@@ -11,7 +11,7 @@
         <b-card-body>
           <b-card-title>{{ cardTitle }}</b-card-title>
           <b-card-text>
-            {{ cardDesc }}
+            <p>{{ cardDesc }}</p>
           </b-card-text>
         </b-card-body>
       </b-card>
@@ -25,7 +25,7 @@ export default {
   props: {
     cardTitle: { type: String, required: true },
     cardImage: { type: String, required: true },
-    cardDesc: { type: String, required: false, placeholder: 'Check out this community!' }
+    cardDesc: { type: String, required: false, default: 'Check out this community!' }
   }
 }
 </script>
@@ -35,6 +35,11 @@ export default {
     width: 100%;
     height: 15vw;
     object-fit: cover;
+}
+
+.nuxt-link-active {
+  text-decoration: none;
+  color: inherit;
 }
 
 </style>
