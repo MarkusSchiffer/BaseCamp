@@ -1,0 +1,38 @@
+{
+  "communities" : {
+    "-MJv5n-b4hVQgcvOVaAn" : {
+      "cumExp" : 7,
+      "description" : "Local trails to towering heights, find groups to hit the trail with.",
+      "groupID" : [ {
+        "someGroup" : "hiking_1"
+      } ],
+      "imgurl" : "http://www.clker.com/cliparts/e/d/8/2/1314062692434832210campfire.png",
+      "name" : "Hiking",
+      "numGroups" : 1,
+      "numUsers" : "4",
+      "popRank" : 1
+    },
+    "-MJvApV1y21nuO45P6Zc" : {
+      "cumExp" : 7,
+      "description" : "Keyboards, switches, cables, and more! Show off your gear, discuss builds, and more.",
+      "groupIDs" : [ {
+        "groupOne" : "mech1",
+        "groupThree" : "mech2",
+        "groupTwo" : "mech3"
+      } ],
+      "imgurl" : "http://www.clker.com/cliparts/e/d/8/2/1314062692434832210campfire.png",
+      "name" : "Mechanical Keyboards",
+      "numGroups" : 1,
+      "numUsers" : "4",
+      "popRank" : 1
+    }
+  },
+  "groups" : {
+    "-MJuI3LRCFc95kgAw2wD" : {
+      "members" : [ {
+        "id" : "Bob"
+      } ],
+      "name" : "someGroup"
+    }
+  }
+}
