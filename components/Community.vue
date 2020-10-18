@@ -22,10 +22,24 @@
 <script>
 export default {
   name: 'Community',
+  mounted () {
+    this.getCommunityInfo()
+  },
   props: {
     cardTitle: { type: String, required: true },
     cardImage: { type: String, required: true, default: '~/static/images/logo.png' },
     cardDesc: { type: String, required: false, default: 'Check out this community!' }
+  },
+  methods: {
+    async getCommunityInfo () {
+      await this.$getCommunityInfo('-MJv5n-b4hVQgcvOVaAn').then((res) => {
+        const result = JSON.parse(JSON.stringify(res))
+        this.cardTitle = result.name
+        this.cardImage = result.imgurl
+        this.cardDesc = result.popRank
+        console.log(result)
+      })
+    }
   }
 }
 </script>
