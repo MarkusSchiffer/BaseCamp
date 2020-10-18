@@ -3,8 +3,7 @@
     <b-navbar toggleable="lg" type="dark" variant="info">
       <nuxt-link to="/">
         <b-navbar-brand>
-          <h1>BaseCamp</h1>
-          <h6>Home</h6>
+          <b-img id="logo" src="~/static/images/logo.png" />
         </b-navbar-brand>
       </nuxt-link>
 
@@ -103,5 +102,14 @@ export default {
   transition-duration: 0.4s;
   background-color: #00bc80;
   margin: 10px;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#logo {
+  height: 100px;
+  width: 120px;
 }
 </style>

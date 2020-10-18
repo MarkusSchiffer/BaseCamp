@@ -6,7 +6,7 @@
         <button id="start-now" onClick="document.location='groups/create'">Create a Group</button>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center">
-        <img id="logo" src="~/static/images/logo.png" />
+        <img id="logo" src="https://toggl.com/blog/wp-content/uploads/2018/10/productive-hobbies.jpg" />
       </div>
     </div>
     <div class="container">
@@ -36,9 +36,10 @@ export default {
 
 <style scoped>
   #logo {
-    width: 200px;
-    height: 200px;
     margin: 10px;
+    width: 450px;
+    height: 250px;
+    border: 5px solid #006958;
   }
 
   #start-now {
@@ -47,6 +48,7 @@ export default {
     font-size: 25px;
     background-color: #006958;
     border: 4px solid #006958;
+    text-shadow: 1px 1px 2px #ffffff;
     margin-left: 100px;
     margin-right: 100px;
   }
@@ -63,6 +65,7 @@ export default {
   #intro {
     font-size: 30px;
     text-align: center;
+    text-shadow: 1px 1px 2px #006958;
     margin-top: 20px;
   }
 
