@@ -7,12 +7,12 @@
 <script>
 export default {
   name: 'Hobby',
+  data () {
+    return {
+      HobbyName: this.$route.params.Hobby
+    }
+  },
   props: {
-    HobbyName: {
-      type: String,
-      required: false,
-      default: 'Hiking'
-    },
     Numusers: {
       type: Number,
       required: false,

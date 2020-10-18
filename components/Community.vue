@@ -1,6 +1,6 @@
 <template>
   <div id="com">
-    <nuxt-link to="/Hobby">
+    <nuxt-link :to="'/Hobby/' + cardTitle">
       <b-card
         no-body
         tag="article"
