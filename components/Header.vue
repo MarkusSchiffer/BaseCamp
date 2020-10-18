@@ -23,8 +23,8 @@
           </b-nav-form>
 
           <b-nav-item>
-            <nuxt-link to="/groups/create">
-              Start a new Group!!
+            <nuxt-link to="/communities/newCommunity">
+              Start a new Community!!
             </nuxt-link>
           </b-nav-item>
 
