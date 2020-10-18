@@ -2,17 +2,18 @@
   <div>
     <nuxt-link to="/">
       <b-card
-        :title="cardTitle"
-        :img-src="cardImage"
-        :img-alt="cardTitle"
-        img-top
+        no-body
         tag="article"
         style="max-width: 20rem;"
         class="mb-2"
       >
-        <b-card-text>
-          {{ cardDesc }}
-        </b-card-text>
+        <b-card-img :src="cardImage" alt="Image" class="image-card"></b-card-img>
+        <b-card-body>
+          <b-card-title>{{ cardTitle }}</b-card-title>
+          <b-card-text>
+            {{ cardDesc }}
+          </b-card-text>
+        </b-card-body>
       </b-card>
     </nuxt-link>
   </div>
@@ -30,5 +31,10 @@ export default {
 </script>
 
 <style scoped>
+.image-card {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
 
 </style>
