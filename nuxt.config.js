@@ -18,6 +18,9 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '~/plugins/createCommunity.js',
+    '~/plugins/getAllUsers.js',
+    '~/plugins/firebase.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -50,7 +53,15 @@ export default {
        measurementId: "G-7WS9W9ZF0W"
      },
      services: {
-       auth: true // Just as example. Can be any other service.
+      auth: true,
+      firestore: true,
+      functions: true,
+      storage: true,
+      realtimeDb: true,
+      messaging: true,
+      performance: true,
+      analytics: true,
+      remoteConfig: true
      }
    },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
