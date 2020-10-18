@@ -2,8 +2,8 @@
   <div>
     <nuxt-link to="/">
       <b-card
-        title="cardTitle"
-        img-src="cardImage"
+        :title="cardTitle"
+        :img-src="cardImage"
         img-alt="Image"
         img-top
         tag="article"
