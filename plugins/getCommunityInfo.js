@@ -5,10 +5,7 @@ export default (ctx, inject) => {
       console.log('hello')
       console.log(cid)
       const communityRef = fireDb.ref(`/communities/${cid}`)
-      await communityRef.once('value').then((response) => {
-        console.log(response.toJSON())
-        return response.key
-      })
+      return await (await communityRef.once('value')).toJSON()
     } catch (e) {
       console.error(e)
     }
