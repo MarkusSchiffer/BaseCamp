@@ -22,9 +22,6 @@
 <script>
 export default {
   name: 'Community',
-  mounted () {
-    this.getCommunityInfo()
-  },
   props: {
     cardTitle: { type: String, required: true },
     cardImage: { type: String, required: true, default: '~/static/images/logo.png' },
