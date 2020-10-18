@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1 id="head">{{ HobbyName }}</h1>
-    <p> hobby page </p>
     <div class="d-flex flex-row justify-content-around flex-wrap">
       <div v-for="group in groups" :key="group.group">
         <Hobbycard :cardTitle="group.group" :cardImage="group.i" />

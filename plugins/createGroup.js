@@ -3,9 +3,12 @@ export default (ctx, inject) => {
   const createGroup = async (group) => {
     try {
       const groupRef = fireDb.ref('/groups/')
-      console.log(group['name']);
-      
-      return await (await groupRef.push(group)).key
+      console.log('name:" ' + group.name)
+      const result = await (await groupRef.push(group)).key
+      return {
+        name: group.name,
+        key: result
+      }
     } catch (e) {
       console.error(e)
     }

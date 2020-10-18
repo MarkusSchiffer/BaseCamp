@@ -30,8 +30,8 @@ export default {
   data () {
     return {
       groupName: this.$route.params.Group,
-      chats: [{ author: 'alpha', content: 'fkljsadoip woijkajf opiwej.jfpk lwejkldsjf;ajfkd;a  sjf;dsjfld;sjafk;ldsfjkl; sjfl;dsjl;fjasdfj; lasdkjkl;sdfjk;lsfj;kldsa jf;alsdjoisd' }, { author: 'beta', content: 'fldksjf;ldsjf lsfjwop' }, { author: 'gamma', content: 'xyz,xyz' }, { author: 'omega', content: 'xyz,xyz' }],
-      author: 'beta',
+      chats: [{ author: 'Karen', content: 'Amazing weekend ladies! Baker was beautiful! We should hit the slopes again some time! Hope to see you next season!' }, { author: 'Rebecca', content: 'I agree completely!' }, { author: 'Gemma', content: 'Just remember to lean forward into those ski boots next time! :)' }, { author: 'Karen', content: 'Of course!' }],
+      author: 'karen',
       form: {
         post: ''
       }

@@ -1,6 +1,6 @@
 <template>
   <div id>
-    <b-navbar toggleable="lg" variant="info" type="dark">
+    <b-navbar toggleable="lg" variant="dark" type="dark">
       <nuxt-link to="/">
         <b-navbar-brand>
           <b-img id="logo" src="~/static/images/logo.png" />
@@ -115,4 +115,7 @@ h1 {
   width: 120px;
 }
 
+.navbar.navbar-dark.bg-dark{
+  background-color:#476268!important;
+}
 </style>
