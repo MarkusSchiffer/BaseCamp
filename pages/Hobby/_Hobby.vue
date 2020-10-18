@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ HobbyName }}</h1>
+    <h1 id="head">{{ HobbyName }}</h1>
     <p> hobby page </p>
   </div>
 </template>
@@ -11,25 +11,15 @@ export default {
     return {
       HobbyName: this.$route.params.Hobby
     }
-  },
-  props: {
-    Numusers: {
-      type: Number,
-      required: false,
-      default: 0
-    },
-    Numgroups: {
-      type: Number,
-      required: false,
-      default: 0
-    },
-    imgurl: {
-      type: String,
-      required: false,
-      default: '~/static/images/logo.png'
-    }
   }
 }
 </script>
-<style>
+<style scoped>
+  #head {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 60px;
+    color: black;
+  }
 </style>
