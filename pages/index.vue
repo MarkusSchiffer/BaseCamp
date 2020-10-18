@@ -22,5 +22,8 @@ export default {
   #logo {
     width: 200px;
     height: 200px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
   }
 </style>
