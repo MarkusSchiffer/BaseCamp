@@ -1,34 +1,20 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        Pastee Mee
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <Community :cardTitle="'Card Title'" :cardImg="'https://picsum.photos/600/300/?image=25'"/>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Community from '~/components/Community'
+
+export default {
+  name: 'index',
+  components: {
+    Community
+  }
+}
 </script>
 
 <style>
