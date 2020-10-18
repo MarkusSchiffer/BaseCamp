@@ -22,8 +22,10 @@
             @click.stop.prevent="comSearch()">Search</b-button>
           </b-nav-form>
 
-          <b-nav-item href="#">
-            Start a new Group!!
+          <b-nav-item>
+            <nuxt-link to="groups/create">
+              Start a new Group!!
+            </nuxt-link>
           </b-nav-item>
 
           <b-nav-item-dropdown right>
@@ -34,12 +36,15 @@
             <b-dropdown-item href="#">
               Profile
             </b-dropdown-item>
-            <b-dropdown-item href="#">
+            <b-dropdown-item v-if="loggedIn">
               Sign Out
+            </b-dropdown-item>
+            <b-dropdown-item v-else>
+              <div @click="googleSignIn">Sign In</div>
             </b-dropdown-item>
           </b-nav-item-dropdown>
 
-          <v-btn outline fab @click="googleSignIn" color="#4285F4"><v-icon>Sign in</v-icon></v-btn>
+          <!-- <v-btn outline fab @click="googleSignIn" color="#4285F4"><v-icon>Sign in</v-icon></v-btn> -->
 
         </b-navbar-nav>
       </b-collapse>
@@ -54,6 +59,10 @@ export default {
   computed: {
     onHome () {
       return this.$route.path === '/'
+    },
+    loggedIn () {
+      return false
+      // Should ask vuex store if the user is logged in.
     }
   },
   data () {
