@@ -22,7 +22,7 @@
 <script>
 export default {
   name: 'Community',
-  mount () {
+  mounted () {
     this.getCommunityInfo()
   },
   props: {
@@ -33,10 +33,11 @@ export default {
   methods: {
     async getCommunityInfo () {
       await this.$getCommunityInfo('-MJv5n-b4hVQgcvOVaAn').then((res) => {
-        const result = JSON.parse(res)
+        const result = JSON.parse(JSON.stringify(res))
         this.cardTitle = result.name
         this.cardImage = result.imgurl
         this.cardDesc = result.popRank
+        console.log(result)
       })
     }
   }

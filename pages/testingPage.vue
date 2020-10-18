@@ -24,9 +24,13 @@ export default {
   },
   methods: {
     async getCommunityInfo () {
-      await this.$getCommunityInfo('-MJv5n-b4hVQgcvOVaAn').then((res) => {
-        console.log('inside testing page, result = ' + res)
-      })
+      try {
+        await this.$getCommunityInfo('-MJv5n-b4hVQgcvOVaAn').then((res) => {
+          console.log('inside testing page, result = ' + res)
+        })
+      } catch (e) {
+        console.log(e)
+      }
     }
   }
 }
