@@ -33,7 +33,9 @@
               <em>User</em>
             </template>
             <b-dropdown-item href="#">
+              <nuxt-link to="groups/_myProfile">
               Profile
+              </nuxt-link>
             </b-dropdown-item>
             <b-dropdown-item v-if="loggedIn">
               Sign Out
