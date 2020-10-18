@@ -5,15 +5,8 @@
     Write to Firestore.
   </h2>
   <div>
-    <button @click="getCommunityInfo" :disabled="writeSuccessful">
-      <span v-if="!writeSuccessful">get community</span>
-      <span v-else>Successful!
-      </span>
-    </button>
-  </div>
-  <div>
-    <button @click="createCommunity" :disabled="writeSuccessful">
-      <span v-if="!createCommunity">create community</span>
+    <button @click="createGroup" :disabled="writeSuccessful">
+      <span v-if="!writeSuccessful">Create Group</span>
       <span v-else>Successful!
       </span>
     </button>
@@ -22,41 +15,31 @@
 </section>
 </template>
 <script>
-const community = {
-  name: '10',
-  numUsers: '4',
-  numGroups: 1,
+const group = {
+  cid: '312312312asda123',
+  communityName: 'Hiking',
+  size: '4',
   description: 'Hackathons',
-  groupIDs: [{
-    groupOne: 'hack1',
-    groupTwo: 'hack2',
-    groupThree: 'hack3'
+  userID: [{
+    userOne: 'hack1',
+    userTwo: 'hack2',
+    userThree: 'hack3'
   }],
-  cumExp: 7,
-  popRank: 5,
+  cumExp: '10',
+  location: 'Anywhere',
   imgurl: 'http://www.clker.com/cliparts/e/d/8/2/1314062692434832210campfire.png'
 }
 export default {
-
   data () {
     return {
       writeSuccessful: false
     }
   },
   methods: {
-    async getCommunityInfo () {
-      try {
-        await this.$getCommunityInfo('-MJv5n-b4hVQgcvOVaAn').then((res) => {
-          console.log('inside testing page, result = ' + res)
-        })
-      } catch (e) {
-        console.log(e)
-      }
-    },
-    async createCommunity () {
+    async createGroup () {
       try {
         console.log('trying to create a community:')
-        await this.$createCommunity(community).then((res) => {
+        await this.$createGroup(group).then((res) => {
           console.log(res)
         })
       } catch (e) {

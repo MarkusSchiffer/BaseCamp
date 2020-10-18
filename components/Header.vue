@@ -3,8 +3,7 @@
     <b-navbar toggleable="lg" type="dark" variant="info">
       <nuxt-link to="/">
         <b-navbar-brand>
-          <h1>BaseCamp</h1>
-          <h6>Home</h6>
+          <b-img id="logo" src="~/static/images/logo.png" />
         </b-navbar-brand>
       </nuxt-link>
 
@@ -22,9 +21,9 @@
             @click.stop.prevent="comSearch()">Search</b-button>
           </b-nav-form>
 
-          <b-nav-item>
+          <b-nav-item id="sus">
             <nuxt-link to="/communities/newCommunity">
-              Start a new Community!!
+              Start a new Community
             </nuxt-link>
           </b-nav-item>
 
@@ -34,7 +33,9 @@
               <em>User</em>
             </template>
             <b-dropdown-item href="#">
+              <nuxt-link to="groups/_myProfile">
               Profile
+              </nuxt-link>
             </b-dropdown-item>
             <b-dropdown-item v-if="loggedIn">
               Sign Out
@@ -90,8 +91,27 @@ export default {
 </script>
 
 <style scoped>
-.nav-link.nuxt-link-exact-active {
-  font-weight: bolder;
+#sus a {
   color: white;
+  text-decoration: none;
+}
+
+#sus:hover {
+  background-color: #00e380; /* Green */
+}
+
+#sus {
+  transition-duration: 0.4s;
+  background-color: #00bc80;
+  margin: 10px;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#logo {
+  height: 100px;
+  width: 120px;
 }
 </style>

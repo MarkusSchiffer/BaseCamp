@@ -3,9 +3,9 @@ export default (ctx, inject) => {
   const createCommunity = async (comObj) => {
     try {
       console.log(comObj)
-      const communityRef = fireDb.ref('/communities')
+      const communityRef = fireDb.ref('/communities/')
       communityRef.push(comObj)
-      await (await communityRef.push(comObj)).key()
+      return await (await communityRef.push(comObj)).key
     } catch (e) {
       console.error(e)
     }
