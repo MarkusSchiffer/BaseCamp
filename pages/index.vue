@@ -29,6 +29,13 @@ export default {
     width: 200px;
     height: 200px;
     margin: 10px;
+    margin-left: 20px;
+  }
+
+  .row {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   body {
@@ -42,14 +49,16 @@ export default {
   }
 
   button {
-    padding: 14px 30px;
+    padding: 12px 26px;
     color: white;
     font-size: 20px;
-    background-color: #007189;
-    border: 4px solid #007189;
+    background-color: #006958;
+    border: 4px solid #006958;
+    margin-left: 180px;
   }
 
   button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 24px 0 rgba(0,0,0,0.19);
   }
+
 </style>
