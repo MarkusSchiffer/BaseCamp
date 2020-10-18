@@ -12,6 +12,9 @@ export default {
   name: 'DefaultLayout',
   components: {
     Header
+  },
+  mounted () {
+    console.log('hi')
   }
 }
 </script>
