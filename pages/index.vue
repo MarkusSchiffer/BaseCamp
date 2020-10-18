@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col col-12 col-md-6 d-flex justify-content-center flex-column">
         <p id="intro">get started learning a new Hobby with BaseCamp!</p>
         <button id="start-now" onClick="document.location='.'">Start Now</button>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
         <img id="logo" src="~/static/images/logo.png" />
       </div>
     </div>
@@ -29,7 +29,6 @@ export default {
     width: 200px;
     height: 200px;
     margin: 10px;
-    margin-left: 20px;
   }
 
   #start-now {
@@ -46,7 +45,6 @@ export default {
   }
 
   .row {
-    margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 50px;
   }
