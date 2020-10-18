@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col col-12 col-md-6 d-flex justify-content-center flex-column">
-        <p id="intro">get started learning a new Hobby with BaseCamp!</p>
+        <p id="intro">Get started learning a new Hobby with BaseCamp!</p>
         <button id="start-now" onClick="document.location='.'">Start Now</button>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center">
@@ -37,7 +37,8 @@ export default {
     font-size: 20px;
     background-color: #006958;
     border: 4px solid #006958;
-    margin-left: 180px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   #start-now:hover {
