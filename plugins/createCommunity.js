@@ -1,11 +1,11 @@
 import { fireDb } from '~/plugins/firebase.js'
 export default (ctx, inject) => {
-  const createCommunity = async (community_obj) => {
+  const createCommunity = async (comObj) => {
     try {
-      console.log(community_obj)
+      console.log(comObj)
       const communityRef = fireDb.ref('/communities')
-      communityRef.push(community);
-      await (await communityRef.push(community)).key()
+      communityRef.push(comObj)
+      await (await communityRef.push(comObj)).key()
     } catch (e) {
       console.error(e)
     }
