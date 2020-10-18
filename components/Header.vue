@@ -23,7 +23,7 @@
           </b-nav-form>
 
           <b-nav-item>
-            <nuxt-link to="groups/create">
+            <nuxt-link to="/groups/create">
               Start a new Group!!
             </nuxt-link>
           </b-nav-item>
