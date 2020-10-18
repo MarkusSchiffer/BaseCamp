@@ -22,9 +22,9 @@
             @click.stop.prevent="comSearch()">Search</b-button>
           </b-nav-form>
 
-          <b-nav-item>
+          <b-nav-item id="sus">
             <nuxt-link to="/communities/newCommunity">
-              Start a new Community!!
+              Start a new Community
             </nuxt-link>
           </b-nav-item>
 
@@ -90,8 +90,18 @@ export default {
 </script>
 
 <style scoped>
-.nav-link.nuxt-link-exact-active {
-  font-weight: bolder;
+#sus a {
   color: white;
+  text-decoration: none;
+}
+
+#sus:hover {
+  background-color: #00e380; /* Green */
+}
+
+#sus {
+  transition-duration: 0.4s;
+  background-color: #00bc80;
+  margin: 10px;
 }
 </style>
