@@ -1,11 +1,10 @@
 import { fireDb } from '~/plugins/firebase.js'
 export default (ctx, inject) => {
-  const updateGroupLists = async () => {
+  const updateGroupLists = async (data) => {
     try {
-      console.log('hello')
-      const group = fireDb.ref('/users')
-      await userRef.once('value').then((data) => {
-        console.log(data.toJSON())
+      const ref = fireDb.ref('/groups/')
+      await ref.push(data).then((x) => {
+        console.log(x)
       })
     } catch (e) {
       // TODO: error handling

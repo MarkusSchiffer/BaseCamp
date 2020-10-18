@@ -20,6 +20,7 @@ const group = {
   communityName: 'Hiking',
   size: '4',
   description: 'Hackathons',
+  name: 'Team One',
   userID: [{
     userOne: 'hack1',
     userTwo: 'hack2',
@@ -40,7 +41,9 @@ export default {
       try {
         console.log('trying to create a community:')
         await this.$createGroup(group).then((res) => {
-          console.log(res)
+          const body = {}
+          body[res.name] = res.key
+          this.$updateGroupList(body)
         })
       } catch (e) {
         console.log(e)

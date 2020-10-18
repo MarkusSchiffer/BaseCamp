@@ -24,7 +24,7 @@ export default {
     '~/plugins/getGroupsInCommunity.js',
     '~/plugins/getCommunityInfo.js',
     '~/plugins/createGroup.js',
-    '~/plugins/updateGroupLists.js'
+    '~/plugins/updateGroupList.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
