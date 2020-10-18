@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <Community :cardTitle="'Card Title'" :cardImg="'https://picsum.photos/600/300/?image=25'"/>
+      <img id="logo" src="~/static/images/logo.png" />
+      <Community :cardTitle="'Card Title'" :cardImage="'https://picsum.photos/600/300/?image=25'"/>
     </div>
   </div>
 </template>
@@ -18,5 +19,8 @@ export default {
 </script>
 
 <style>
-
+  #logo {
+    width: 200px;
+    height: 200px;
+  }
 </style>
