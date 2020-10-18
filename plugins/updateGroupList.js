@@ -1,8 +1,8 @@
 import { fireDb } from '~/plugins/firebase.js'
 export default (ctx, inject) => {
-  const updateGroupLists = async (data) => {
+  const updateGroupList = async (data) => {
     try {
-      const ref = fireDb.ref('/groups/')
+      const ref = fireDb.ref('/groupMap/')
       await ref.push(data).then((x) => {
         console.log(x)
       })
@@ -12,5 +12,5 @@ export default (ctx, inject) => {
     }
     console.log('done')
   }
-  inject('updateGroupLists', updateGroupLists)
+  inject('updateGroupList', updateGroupList)
 }
