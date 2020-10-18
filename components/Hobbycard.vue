@@ -1,19 +1,24 @@
 <template>
-  <div id="com">
-    <nuxt-link :to="'/Hobby/' + cardTitle">
+  <div id="hob">
+    <nuxt-link :to="'/Group/' + cardTitle">
       <b-card
         no-body
         tag="article"
         style="max-width: 20rem;"
         class="mb-2"
       >
-        <b-card-img :src="cardImage" alt="Image" class="image-card"></b-card-img>
+        <b-card-img :src="cardImage" alt="Image" rounded="circle" class="image-card"></b-card-img>
         <b-card-body>
           <b-card-title>{{ cardTitle }}</b-card-title>
           <b-card-text>
             <p>{{ cardDesc }}</p>
           </b-card-text>
         </b-card-body>
+        <div class="mb-4">
+            <b-avatar></b-avatar>
+            <b-avatar variant="primary" text="BV"></b-avatar>
+            <b-avatar variant="info" src="https://placekitten.com/300/300"></b-avatar>
+        </div>
       </b-card>
     </nuxt-link>
   </div>
@@ -21,11 +26,12 @@
 
 <script>
 export default {
-  name: 'Community',
+  name: 'Hobbycard',
   props: {
     cardTitle: { type: String, required: true },
     cardImage: { type: String, required: true, default: '~/static/images/logo.png' },
-    cardDesc: { type: String, required: false, default: 'Check out this community!' }
+    cardDesc: { type: String, required: false, default: 'Check out this Group!' }
+    // members: { type: Array, required: false, default: [{ profile: 'https://placekitten.com/300/300' }, { profile: 'https://placekitten.com/300/300' }, { profile: 'https://placekitten.com/300/300' }] }
   }
 }
 </script>
@@ -42,8 +48,11 @@ export default {
   color: inherit;
 }
 
-#com:hover {
+#hob:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 24px 0 rgba(0,0,0,0.19);
 }
 
+.mb-4 {
+    align-content: center;
+}
 </style>
