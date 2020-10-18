@@ -3,21 +3,23 @@
     <b-navbar toggleable="lg" type="dark" variant="info">
       <nuxt-link to="/">
         <b-navbar-brand>
-          NavBar
+          <h1>BaseCamp</h1>
+          <h6>Home</h6>
         </b-navbar-brand>
       </nuxt-link>
 
       <b-navbar-toggle target="nav-collapse" />
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+        <!-- <b-navbar-nav>
           <b-nav-item href="#">
             Link
           </b-nav-item>
           <b-nav-item href="#" disabled>
             Disabled
           </b-nav-item>
-        </b-navbar-nav>
+        </b-navbar-nav> -->
+        <!-- Left aligned items here. -->
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
