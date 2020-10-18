@@ -37,7 +37,12 @@ export default {
     object-fit: cover;
 }
 
-.nuxt-link-active {
+a .card-body {
+  text-decoration: none;
+  color: inherit;
+}
+
+#com a {
   text-decoration: none;
   color: inherit;
 }
